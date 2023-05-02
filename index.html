@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ИНКИ 599 Проектна задача</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <script>
+  // Get all the product containers
+  var containers = document.querySelectorAll(".container");
+  
+  // Loop through each container and center it
+  for (var i = 0; i < containers.length; i++) {
+    var container = containers[i];
+    var containerWidth = container.offsetWidth;
+    var parentWidth = container.parentNode.offsetWidth;
+    var leftPosition = (parentWidth - containerWidth) / 2;
+    container.style.left = leftPosition + "px";
+  } 
+</script>
+<body>
+  <div class="container shoe">
+    <div class="productImage shoeImg"></div>
+    <div class="size shoeSize">
+      <h4>Големина</h4>
+      <ul>
+        <li>41</li>
+        <li>42</li>
+        <li>43</li>
+      </ul>
+    </div>
+    <div class="price shoePrice">
+      <h4>Цена</h4>
+      <span>5000 МКД</span>
+      <button onclick="location.href='https://facebook.com'">Купи</button>
+    </div>
+    <div class="color shoeColor">
+      <h4>Достпни бои</h4>
+      <ul>
+        <li><span class="blue"></span></li>
+        <li><span class="yellow"></span></li>
+        <li><span class="red"></span></li>
+      </ul>
+    </div>
+    <div class="productName shoeName">
+      Nike Air Force
+    </div>
+  </div>
+  <div class="container shirt">
+    <div class="productImage shirtImg"></div>
+    <div class="size shirtSize">
+      <h4>Големина</h4>
+      <ul>
+        <li>S</li>
+        <li>M</li>
+        <li>L</li>
+      </ul>
+    </div>
+    <div class="price shirtPrice">
+      <h4>Цена</h4>
+      <span>499 МКД</span>
+      <button onclick="location.href='https://facebook.com'">Купи</button>
+    </div>
+    <div class="color shirtColor">
+      <h4>Достапни бои</h4>
+      <ul>
+        <li><span class="blue"></span></li>
+        <li><span class="yellow"></span></li>
+        <li><span class="red"></span></li>
+      </ul>
+    </div>
+    <div class="productName shirtName">
+      Маица со кратки ракави
+    </div>
+  </div>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
